@@ -12,7 +12,7 @@ import {z} from 'genkit';
 
 const GenerateResponseInputSchema = z.object({
   activityType: z
-    .enum(['donation', 'follow', 'subscription'])
+    .enum(['donation', 'follow', 'subscription','raid'])
     .describe('The type of viewer activity.'),
   userName: z.string().describe('The name of the user who triggered the activity.'),
   amount: z.number().optional().describe('The amount of the donation, if applicable.'),
